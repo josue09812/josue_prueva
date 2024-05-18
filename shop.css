@@ -1,0 +1,84 @@
+/*Globale*/
+*::after
+*::before
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body¨{
+    margin: 0 auto;
+     max-width: 1200px;
+     font-family: 'lato';
+    color: #000000;
+    }
+
+.icono-cart{
+    width: 40px;
+    height: 40px;
+}
+img{
+    max-width: 100%;
+}
+
+/*heder*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px 0;
+}
+
+/*Main*/
+.contenedor-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20xp;
+}
+
+.item{
+    border-radius: 10xp;
+}
+.intem:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden    ;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.nombre{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10xp;
+}
+
+.prince{
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.nombre button{
+    border: none;
+    background: none;
+    background-color: #000000;
+    color: rgb(250, 250, 250);
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+}
